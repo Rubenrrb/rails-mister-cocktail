@@ -1,13 +1,14 @@
-<div class="container d-flex justify-content-center">
-  <div class="card m-3 p-3" style="width: 18rem;">
+<div class="new-banner">
+    <div class="logo"><b>Cr<span>ea</span>te<span>Ne</span>w<span>Co</span>ck<span>ta</span><span>il</span>s</b></div>
+
+
+  <div class="container d-flex justify-content-center mt-5">
     <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name %>
     <%= f.submit 'Create Cocktail', class: 'btn btn-success btn-block'%>
-    <% end %>
-      <div class="m-3 text-center">
-        <%= link_to cocktails_path do %>
-        <i class="fas fa-undo" style="primary"></i> Back to list
-        <% end %>
-      </div>
+    <% end %>  
     </div>
+  </div>
 </div>
+
+

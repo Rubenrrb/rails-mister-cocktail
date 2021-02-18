@@ -1,20 +1,19 @@
-<% @cocktails.each do |cocktail| %>
-  <%= cocktail.name %>
-<% end %>
-
-<%= link_to "Create Cocktail", new_cocktail_path  %>
+<div class="home-banner">
+    <div class="logo"><b>C<span>i</span>t<span>y</span>C<span>oc</span>k<span>ta</span><span>il</span>s</b></div>
+    <h1>The world's best cocktail recipes</h1>
+      <p>Don't worry, don't cry, drink vodka and fly...</p>
+  </div>
 
 <div class="container">
-  
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-    Cocktails
+  <div class="row justify-content-center">
+    <div class="col-6">
+      
+    </div>
   </div>
-    <div class="new">
-        <%= link_to new_cocktail_path do %>
-        <strong><i class="fas fa-plus"></i> Create new cocktail</strong>
-        <% end %>
-        </div>
+</div>
 
+
+<div class="container">
     <% @cocktails.each do |cocktail| %>
     <div class="card-product my-3">
       <div class="card-product-infos">
@@ -29,3 +28,4 @@
 
     <% end %>
 </div>
+
