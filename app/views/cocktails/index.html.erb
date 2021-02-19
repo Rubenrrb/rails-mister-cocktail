@@ -4,24 +4,16 @@
       <p>Don't worry, don't cry, drink vodka and fly...</p>
   </div>
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      
-    </div>
-  </div>
-</div>
-
-
-
-<div class="container my-5">
+<div class="container my-3">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(#)">
-        <h2 class="first"><span><%= cocktail.name %></span></h2>
+        <%= link_to cocktail_path(cocktail) do %>
+      <div class="card-category" style="background-image: url(<%= cl_image_path cocktail.photo.key %>)">
+        <h2 class="first"><strong><span><%= cocktail.name %></span></strong></h2>
         <div class="card-tags">
         </div>
       </div>
+      <% end %>
     <% end %>
   </div>
 </div>
