@@ -11,12 +11,16 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     position: relative;
     transition: all 0.5s ease;
+    text-decoration: none;
   }
   
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
+    a:hover {
+      text-decoration: none;
+    }
   }
  
   .card-remove-link {
@@ -54,19 +58,22 @@
     }
     a {
       color: white;
+      text-decoration: none;
     }
   }
 
   .card-category {
     border-radius: 8px;
-    border: 2px solid rgb(230, 0, 120);
+    border: 2px solid rgba(230, 0, 120, .7);
     opacity: .9;
-    box-shadow: 0 0 15px rgba(230, 0, 120, .8);
+    box-shadow: 0 0 5px rgba(230, 0, 120, .7);
+    text-decoration: none;
     cursor: pointer;
   }
   
   .card-category:hover {
     animation: border-flicker 2s linear forwards;
+    text-decoration: none;
   }
   
   .card-category h2 {
@@ -75,14 +82,17 @@
     font-size: 28px;
     margin: 15px 0 0;
     color: rgba(250, 250, 250, .8);
+    text-decoration: none;
   }
   
   .card-category:hover h1 {
     animation: text-flicker 2s linear forwards;
+    text-decoration: none;
   }
   
   .card-category:hover .first {
     animation: letter-flicker 3s linear infinite;
+    text-decoration: none;
   }
   
   @keyframes text-flicker {
@@ -316,13 +326,13 @@
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
