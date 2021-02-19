@@ -1,7 +1,7 @@
 <div class="container d-flex justify-content-center">
   <div class="card m-3" style="width: 18rem;">
     <%= simple_form_for [@cocktail, @dose] do |f| %>
-        <%= f.association :ingredient %>
+        <%= f.association :ingredient, collection: Ingredient.where.not(id: @cocktail.ingredients).order(name: :asc) %>
         <%= f.input :description %>
         <%= f.submit class: 'btn btn-success mb-3' %>
       <% end %>
