@@ -15,7 +15,7 @@
 }
 
 .footer a {
-    color: rgb(255, 98, 190);
+    color: rgb(11,247,237);
     text-align: center;
     font-size: 30px;
 }
@@ -31,9 +31,71 @@
     color: #BF0F12;
 }
 
-.footer a:hover{
-    color: rgb(117,232,7);
-    text-shadow: 0 0 15px rgb(117,232,7);
-    transition: all 0.5s ease;
-}
 
+.footer a:hover {
+    animation: text-flicker 3s linear infinite;
+    color: rgb(117,232,7);
+  }
+
+  @keyframes text-flicker {
+    2% { 
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    3% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    6% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    9% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    11% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    14% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    18% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    32% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    33% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    37% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    39% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    43% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    46% {
+      color: rgb(117,232,7);
+      text-shadow: none;
+    }
+    47% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+    100% {
+      color: rgb(117,232,7);
+      text-shadow: 0 0 15px rgb(117,232,7);
+    }
+  }
