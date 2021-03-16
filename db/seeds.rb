@@ -12,12 +12,13 @@ ingredients = open(url).read
 objs = JSON.parse(ingredients)
 
 puts "cleaning up db"
+Dose.destroy_all
 Ingredient.destroy_all
 puts "db is clean"
 
 objs["drinks"].each do |key|
-  INGREDIENT = Ingredient.create!(
+  ingredient = Ingredient.create!(
     name: "#{key["strIngredient1"]}"
     )
-  puts "#{INGREDIENT.name} created!"
+  puts "#{ingredient.name} created!"
 end

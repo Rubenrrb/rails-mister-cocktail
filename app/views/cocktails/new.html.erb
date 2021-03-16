@@ -1,12 +1,11 @@
 <div class="new-banner">
-    <div class="logo"><b>Cr<span>ea</span>te<span>Ne</span>w<span>Co</span>ck<span>ta</span><span>il</span>s</b></div>
+  <div class="logo"><b>Cr<span>ea</span>te<span>Ne</span>w<span>Co</span>ck<span>ta</span><span>il</span>s</b></div>
 </div>
-
-  <div class="container d-flex justify-content-center mt-5">
-    <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
+<div class="container d-flex justify-content-center mt-5">
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name, required: false %>
+    <%= f.input :photo, as: :file, required: false %>
     <%= f.submit 'Create Cocktail', class: 'btn btn-success btn-block'%>
-    <% end %>  
-    </div>
-  </div>
+  <% end %>
+</div>
+</div>
