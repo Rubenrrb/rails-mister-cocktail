@@ -104,7 +104,30 @@
     text-decoration: none;
   }
 
-
+  @media (max-width: 900px) {
+    .card-cocktail-info {
+      display: block;
+    }
+    .card-cocktail-info img {
+      margin-bottom: 8px;
+      padding: 10px;
+    }
+    .card-cocktail-info h2 {
+      font-size: 18px;
+      margin: 8px;
+    }
+    .container-cocktail-info button.btn-1 {
+      width: 35vh!important;
+      margin-left: 10px;
+    }
+    .cocktail-info-name {
+      margin-top: 80px;
+      height: auto;
+  }
+    .navbar-lewagon {
+      background-color: rgba(0, 0, 0, .85);
+  }
+}
   // .card-remove-link {
   //   color: white;
   //   border-radius: 50%;
