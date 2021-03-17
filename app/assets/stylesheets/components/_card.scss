@@ -51,15 +51,22 @@
   }
 
   .cocktail-info-name {
-    height: 30vh;
+    height: 37vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 34px;
-      h2 {
-        color: white;
-      }
+      h1 {
+  font-size: 34px;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 2rem 4rem 2rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+}
   }
 
   .container-cocktail-info {
@@ -72,7 +79,7 @@
 
   .card-cocktail-info {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 3fr;
     grid-gap: 3rem;
     background-color: transparent;
     max-width: 650px;
