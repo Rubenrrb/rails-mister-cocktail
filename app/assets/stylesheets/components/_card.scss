@@ -115,13 +115,14 @@
     .card-cocktail-info img {
       margin-bottom: 8px;
       padding: 10px;
+      height: 280px;
     }
     .card-cocktail-info h2 {
       font-size: 18px;
       margin: 8px;
     }
     .container-cocktail-info button.btn-1 {
-      width: 35vh!important;
+      width: 39vh!important;
       margin-left: 10px;
     }
     .cocktail-info-name {
@@ -131,7 +132,27 @@
     .navbar-lewagon {
       background-color: rgba(0, 0, 0, .85);
   }
+    .home-banner h1 {
+    margin-left: 10px;
+  }
+
+  .home-banner p {
+    margin-left: 10px;
+  }
+
+  .logo b {
+    font: 400 10vh "Vibur";
 }
+
+  .logo {
+     width: 100%;
+  }
+
+  .container-cocktail-info {
+    width: 46vh;
+}
+
+  }
   // .card-remove-link {
   //   color: white;
   //   border-radius: 50%;
