@@ -18,7 +18,7 @@
           <%= simple_form_for [@cocktail, @dose] do |f| %>
             <%= f.association :ingredient, required: false, collection: Ingredient.where.not(id: @cocktail.ingredients).order(name: :asc) %>
             <%= f.input :description, required: false %>
-            <%= f.submit class: 'btn-1' %>
+            <%= f.submit class: 'btn-1', style: 'padding: 10px; width: 100%;' %>
           <% end %>
         </div>
       </div>

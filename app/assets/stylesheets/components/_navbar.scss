@@ -64,4 +64,14 @@ input.btn-block[type="submit"]:hover {
 
 .modal-content {
   background-color: rgba(0, 0, 0, .8);
+  border-radius: 30px;
+  padding: 16px;
+}
+
+.form-control {
+  border-radius: 16px;
+}
+
+.modal-header .close {
+  color: white;
 }
