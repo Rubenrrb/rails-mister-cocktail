@@ -5,6 +5,7 @@
     background-position: center;
     padding: 200px 0;
     height: 500px;
+    border-bottom: solid 2px rgba(240, 240,240, 0.4);
   }
 
   .new-banner {
@@ -13,13 +14,15 @@
     background-position: center;
     padding: 200px 0;
     height: 500px;
+    border-bottom: solid 2px rgba(240, 240,240, 0.4);
   }
-  
+
   .dose-banner {
     background-size: cover;
     background-position: center;
     padding: 200px 0;
     height: 300px;
+    border-bottom: solid 2px rgba(240, 240,240, 0.4);
   }
 
   .home-banner h1 {
@@ -28,16 +31,16 @@
     color: white;
     text-shadow: rgb(23,254,254) 1px 1px;
   }
-  
+
   .home-banner p {
     color: white;
     opacity: .7;
     font-size: 20px;
     margin-left: 490px;
     text-shadow: lightslategray 1px;
-    
+
   }
-  
+
   @import url(//fonts.googleapis.com/css?family=Vibur);
 html,body{
   height:100%
@@ -76,7 +79,7 @@ html,body{
      color: #333;
   }
   80% {
-    
+
     text-shadow: none;
   }
   81% {

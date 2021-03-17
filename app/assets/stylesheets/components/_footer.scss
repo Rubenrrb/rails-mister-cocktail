@@ -1,11 +1,12 @@
 .footer {
-    background-color: rgb(44,43,43);
+    background-color: rgb(12,12,12);
     padding: 50px;
     margin: 0px auto;
     text-align: center;
     font-weight: bolder;
     font-size: 16px;
     margin-top: 40px;
+    line-height: 34px;
 }
 
 .links {
@@ -14,8 +15,8 @@
     font-size: 16px;
 }
 
-.footer a {
-    color: rgb(11,247,237);
+.footer i {
+    color: rgb(0, 180, 230);
     text-align: center;
     font-size: 26px;
 }
@@ -32,13 +33,13 @@
 }
 
 
-.footer a:hover {
+.footer i:hover {
     animation: text-flicker 3s linear infinite;
     color: rgb(117,232,7);
   }
 
   @keyframes text-flicker {
-    2% { 
+    2% {
       color: rgb(117,232,7);
       text-shadow: 0 0 15px rgb(117,232,7);
     }

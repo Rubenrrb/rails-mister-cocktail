@@ -26,6 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
+    margin: 34px 0;
     a:hover {
       text-decoration: none;
     }
@@ -41,7 +42,6 @@
   }
 
   .card-create-dose {
-    background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 2px;
@@ -50,9 +50,54 @@
     margin-left: 16px;
   }
 
-  .fas.fa-magic {
-    cursor: pointer;
+  .cocktail-info-name {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+      h2 {
+        color: white;
+      }
   }
+
+  .container-cocktail-info {
+    max-width: 1100px;
+    overflow: auto;
+    margin: auto;
+    padding: 34px;
+
+  }
+
+  .card-cocktail-info {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 3rem;
+    background-color: transparent;
+    max-width: 650px;
+      h2 {
+        color: white;
+        font-size: 28px;
+      }
+  }
+
+  .fas.fa-cocktail {
+    color: rgb(0, 180, 230);
+  }
+
+  .far.fa-trash-alt {
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+
+  .far.fa-trash-alt:hover {
+    animation: text-flicker 2s linear forwards;
+    text-decoration: none;
+  }
+
+
   // .card-remove-link {
   //   color: white;
   //   border-radius: 50%;
@@ -340,6 +385,69 @@
       border: 3px solid rgb(0, 180, 230);
       box-shadow: 0 0 20px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+  }
+
+  @keyframes border-flicker-2 {
+2% {
+      border: 3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    3% {
+      border:  3px solid rgba(120, 0, 50, .5);
+      box-shadow: none;
+    }
+    6% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    9% {
+      border:  3px solid rgba(120, 0, 50, .5);
+      box-shadow: none;
+    }
+    11% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    14% {
+      border:  3px solid rgba(120, 0, 50, .5);
+      box-shadow: none;
+    }
+    18% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    32% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    33% {
+      border:  3px solid rgba(120, 0, 50, .5);
+      box-shadow: none;
+    }
+    37% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    39% {
+      border:  3px solid rgba(120, 0, 50, .5);
+      box-shadow: none;
+    }
+    40% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
+    }
+    100% {
+      border:  3px solid rgb(230, 0, 120);
+      box-shadow: 0 0 20px -1px rgb(230, 0, 120),
+      0 0 12px -1px rgb(230, 0, 120) inset;
     }
   }
 

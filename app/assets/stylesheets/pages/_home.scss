@@ -1,9 +1,30 @@
 // Specific CSS for your home-page
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-background-color: rgb(247,247,247);
+background-image:  linear-gradient((rgba(0,0,0,0.5), rgba(0,0,0,0.5))), url(https://cdn.nohat.cc/thumb/f/720/comrawpixel583383.jpg);
+background-size: cover;
 }
 
 a {
-  text-decoration: none;
-  text-decoration-color: none;
+  text-decoration: none!important;
+  color: white;
+  color: inherit!important;
 }
+
+a:link {
+  text-decoration: none!important;
+}
+
+.simple_form {
+  color: cyan;
+}
+
+img {
+  width: 100%;
+}
+

@@ -19,7 +19,7 @@
 
 .btn-2 {
   color: white;
-  background-color: rgb(57,212,171);
+  background-color: rgb(0, 180, 230);
   // box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
   border-radius: 50px;
   text-decoration: none;
@@ -28,8 +28,40 @@
 .btn-1 {
   color: white;
   background-color: transparent;
-  border: 2px solid palevioletred;
+  border: 2px solid rgb(230, 0, 120);
   // box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   border-radius: 50px;
   text-decoration: none;
+}
+
+.btn-2:hover {
+  color: palevioletred;
+  animation: border-flicker-2 2s linear forwards;
+    text-decoration: none;
+
+}
+
+.btn-1:hover {
+  color: rgb(57,212,171);
+  animation: border-flicker 2s linear forwards;
+  text-decoration: none;
+}
+
+input.btn-block[type="submit"] {
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgb(230, 0, 120);
+  // box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+input.btn-block[type="submit"]:hover {
+  color: rgb(57,212,171);
+  animation: border-flicker 2s linear forwards;
+  text-decoration: none;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, .8);
 }
