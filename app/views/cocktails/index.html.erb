@@ -1,18 +1,17 @@
 <div class="home-banner">
-    <div class="logo"><b>C<span>i</span>t<span>y</span>C<span>oc</span>k<span>ta</span><span>il</span>s</b></div>
-    <h1>The world's best cocktail recipes</h1>
-      <p>Don't worry, don't cry, drink vodka and fly...</p>
+  <div class="logo"><b>C<span>i</span>t<span>y</span>C<span>oc</span>k<span>ta</span><span>il</span>s</b></div>
+  <h1>The world's best cocktail recipes</h1>
+  <p id="typed-subheader"></p>
 </div>
-
 <div class="container my-3">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-        <%= link_to cocktail_path(cocktail) do %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path cocktail.photo.key %>)">
-        <h2 class="first"><strong><span><%= cocktail.name %></span></strong></h2>
-        <div class="card-tags">
+      <%= link_to cocktail_path(cocktail) do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path cocktail.photo.key %>)">
+          <h2 class="first"><strong><span><%= cocktail.name %></span></strong></h2>
+          <div class="card-tags">
+          </div>
         </div>
-      </div>
       <% end %>
     <% end %>
   </div>
